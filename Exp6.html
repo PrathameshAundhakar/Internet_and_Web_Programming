@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JACKPOT</title>
+        <script type="text/javascript">
+            function Disp(){
+                const num = document.getElementById("num");
+                if(num.value>9999 || num.value<1000){
+                    window.alert("Enter a 4 digit number.")
+                }
+                const xhttp=new XMLHttpRequest();
+                xhttp.onload=function(){
+                    if(num.value%10==7){
+                        document.getElementById("texto").innerHTML="You Won Rs1000.";
+                    }
+                    else if(num.value%10==9){
+                        document.getElementById("texto").innerHTML="You Won Rs3000.";
+                    }
+                    else{
+                        document.getElementById("texto").innerHTML="You Won Rs100.";
+                    }
+                }
+                xhttp.open("GET","ajax.txt");
+                xhttp.send();
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <h1>WIN A JACKPOT</h1>
+            <h2>Enter a Number to win!!!</h2>
+            <table>
+                <tr>
+                    <td>
+                        Enter a 4 Digit Number:
+                    </td>
+                    <td><input type="text" id="num"></td>
+                </tr>
+            </table>
+            <button type="button" id="but" onclick="Disp()">Submit</button>
+        </div>
+        <p id="texto"></p>
+        </body>
+</html>

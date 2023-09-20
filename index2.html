@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Creator</title>
+        <style>
+            div {
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+        <script type="text/javascript">
+            function color() {
+                var r = parseInt(document.getElementById("red").value);
+                var b = parseInt(document.getElementById("blue").value);
+                var g = parseInt(document.getElementById("green").value);
+
+                document.getElementById("output").style.background = 'rgb(' + r + ',' + g + ',' + b + ')';
+            }
+        </script>
+    </head>
+    <body id="body">
+        <table>
+            <tr>
+                <td>Red</td>
+                <td><input type="text" id="red" onchange="color()" value="255"></td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td><input type="text" id="blue" onchange="color()" value="255"></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td><input type="text" id="green" onchange="color()" value="255"></td>
+            </tr>
+            <tr>
+                <td>Output</td>
+                <td><div id="output"></div></td>
+            </tr>
+        </table>
+    </body>
+</html>

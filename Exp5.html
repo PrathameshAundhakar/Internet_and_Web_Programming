@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+    <style>
+        .container{
+            padding: 0%;
+        }
+        .left{
+            float: left;
+            width: 48.5%;
+            height: 600px;
+            background-color: rgb(72, 105, 177);
+            padding-left: 10px;
+            border: solid;
+            border-radius: 20px;
+            
+        }
+        .right{
+            width:48.5%;
+            height: 600px;   
+            float: right;
+            background-color: rgb(200, 194, 189);
+            padding-left: 10px;
+            border: solid;
+            border-radius: 20px;
+
+        }
+        h1,h2{
+            text-align: center;
+        }
+        h3{
+            text-decoration: underline;
+            text-align: center;
+            font-size: x-large;
+        }
+        .centre{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 200px;
+            font-size: large;
+        }
+        #button1{
+            background-color: #4CAF50;
+            border: none;
+            padding: 5px 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            position: relative;
+            right:65px;
+            top: 30px;
+        }
+        p{
+            font-size: large;
+        }
+        
+
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <h1>E-Newspaper</h1>
+        <div class="left">
+            <div class="centre">
+            Date : <select type="dropbox" id="drop1"  >
+                <option value="1">31/08/2022</option>
+                <option value="2">01/09/2022</option>
+                <option value="3">02/09/2022</option>
+                <option value="4">03/09/2022</option>
+            </select>
+            <button type="button" id="button1">Add</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2 id="title1">Date :31/08/2022</h2>
+            <h3 id="head1">Healine:Nasa Moon rocket ready for second attempt at liftoff</h3>
+            <p id="para1">"Our team is ready," said Jeremy Parsons, deputy manager of exploration ground systems at Kennedy Space Center, on Friday.
+                "They are getting better with every attempt and actually performed superbly during launch countdown number one... I think if the conditions with weather and the hardware align, we'll absolutely go."
+                Though the area around the launch site will be closed to the public, 400,000 people are expected to gather on beaches nearby to see -- and hear -- the most powerful vehicle that Nasa has ever launched climb into space.
+                Nasa's initial launch attempt on Monday was halted after engineers detected a fuel leak and a sensor showed that one of the rocket's four main engines was too hot.
+                Both issues have since been resolved, the launch team said.
+                Shortly before 6am (1000 GMT), launch director Charlie Blackwell-Thompson gave the go-ahead to start filling the rocket's tanks with cryogenic fuel.
+                About three million liters of ultra-cold liquid hydrogen and oxygen is expected to be pumped into the spacecraft.
+                And the weather appears to be cooperating: the US Space Force predicts a 60 percent chance of favorable weather at the scheduled liftoff time, growing to 80 per cent later in the launch window.
+                If something requires Nasa to stand down again on Saturday, there are backup opportunities on Monday or Tuesday. After that, the next launch window will not be until September 19, due to the Moon's position.
+                The purpose of the Artemis 1 mission is to verify that the Orion capsule, which sits atop the SLS rocket, is safe to carry astronauts in the future.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="exp5.js"></script>
+</body>
+</html>

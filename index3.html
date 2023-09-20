@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favorite color</title>
+        <script type="text/javascript">
+            function changeBackground() {
+                var color = document.getElementById('yourcolor').value;
+                document.body.style.backgroundColor = color;
+            }
+            window.addEventListener("load",function() { changeBackground('color') });
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return false;">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" /></td>
+                </tr>
+                <tr>
+                    <td>Enter your favorite color:</td>
+                    <td><input type="text" id="yourcolor" onkeyup="changeBackground()" /></td>
+                </tr>
+            </table>
+            <button type="submit" onclick="changeBackground()">Submit</button>
+            
+        </form>
+    </body>
+</html>
